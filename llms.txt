@@ -1,0 +1,148 @@
+# WebViewGold Documentation
+
+> Official WebViewGold documentation in Markdown: turn any website, PWA or web app into a native iOS, Android or macOS app — setup guides, native JavaScript APIs and app store publishing.
+
+WebViewGold is a ready-to-use Xcode and Android Studio app template by OnlineAppCreator that wraps your website, PWA, SaaS dashboard, online shop or AI-generated web app into a native app. You keep your website as the single source of truth and switch on native features — push notifications, in-app purchases, AdMob, QR/barcode scanner, biometrics, deep links and many more — through simple configuration options and JavaScript/URL-scheme APIs.
+
+Canonical online version: https://www.webviewgold.com/docs/ . Translations (de, fr, es, zh) live in the `de/`, `fr/`, `es/` and `zh/` folders with the same file names.
+
+## WebViewGold for iOS
+
+- [WebViewGold for iOS – overview](ios/README.md): Overview, quick start and list of all topics.
+- [Set up your web app](ios/setup-website.md): Prepare your website, PWA, or local HTML files for your iOS app: use a remote URL, bundle files offline in the app, or combine both with an offline fallback.
+- [Configure WebViewGold](ios/setup.md): Download the WebViewGold Xcode template, insert your URL in Config.swift, and explore every built-in configuration option — no coding skills required.
+- [Name, Icon & Splash](ios/app-name-icon-splash.md): Rename your iOS app, add a custom app icon, and set up personalized splash screen graphics for your WebViewGold app.
+- [Modify Safe Area](ios/safe-area.md): Adjust the safe area and enable the custom bottom bar so your web app looks perfect on iPhones with a Home bar.
+- [Geolocation API](ios/geolocation.md): Enable HTML5 geolocation in your iOS WebView app and request precise location permissions the right way.
+- [Push Notifications API](ios/push-notifications.md): Send push notifications to your iOS app users with OneSignal, Firebase, or Pushwoosh — setup, deep links, and per-user targeting explained.
+- [AdMob Ads API](ios/admob.md): Monetize your iOS app with Google AdMob banner, interstitial, and rewarded ads — configuration and JavaScript triggers.
+- [Facebook Ads API](ios/facebook-ads.md): Show Facebook Audience Network banner and interstitial ads in your WebViewGold iOS app.
+- [HTML Audio API](ios/html-audio.md): Keep HTML audio playing in the background of your iOS WebView app — even when the screen is locked.
+- [Native Video API](ios/native-video.md): Play video streams in the native iOS video player with Picture-in-Picture support — triggered straight from your web app.
+- [File Downloader API](ios/file-downloader.md): Let users download images, PDFs, and other files from your web app straight to their iPhone or iPad.
+- [Printer API](ios/printer.md): Print images and PDFs from your web app via AirPrint: send files to the native iOS print dialog with a single link.
+- [iCal Calendar API](ios/ical-calendar.md): Add calendar events from your web app to the native iOS calendar using the iCal Calendar API.
+- [Apple Wallet Pass API](ios/wallet-pass.md): Let users add .pkpass passes (tickets, coupons, membership cards) from your web app to Apple Wallet.
+- [UUID API](ios/uuid.md): Identify app installations with a unique UUID appended to your WebView URL or retrieved via JavaScript.
+- [Flashlight API](ios/flashlight.md): Control the device flashlight from your web app with simple JavaScript links in WebViewGold for iOS.
+- [Reset App API](ios/reset-app.md): Reset cache, cookies, and local storage of your iOS WebView app with a single link or JavaScript call.
+- [User Tracking Decision API](ios/user-tracking.md): Respect App Tracking Transparency: read and react to the user's tracking decision inside your WebViewGold iOS app.
+- [Loading Sign API](ios/loading-sign.md): Show or hide the native loading indicator on demand and customize the loading experience of your iOS app.
+- [Pull-to-Refresh API](ios/pull-to-refresh.md): Enable the native pull-to-refresh gesture in your iOS WebView app, customize its colors, and toggle it dynamically from your web app.
+- [URL Handling API](ios/url-handling.md): Decide which links open inside your app, in an in-app browser tab, or in Safari — full URL handling control for iOS.
+- [Social Login Helper](ios/social-login.md): Make Google, Facebook, and Apple OAuth logins work reliably inside your iOS WebView app with the built-in social login helpers.
+- [Reconnect API](ios/reconnect.md): Add a "Try again" button to your offline fallback page that reloads the last online URL of your iOS app.
+- [Custom CSS & JS API](ios/custom-css-js.md): Inject custom CSS styles and JavaScript code into any page of your iOS WebView app — perfect for app-only tweaks.
+- [Universal Links API](ios/universal-links.md): Open links to your domain directly in your iOS app with Apple Universal Links — setup, AASA file, and troubleshooting.
+- [Deep Linking API](ios/deep-linking.md): Launch your iOS app via custom URL schemes and deep link users to specific pages of your web app.
+- [App Sharing Dialog API](ios/app-sharing-dialog.md): Trigger the native iOS share sheet from your web app to let users share your app or any URL.
+- [In-App Rating Dialog API](ios/in-app-rating.md): Ask users for an App Store rating at the perfect moment — trigger the native iOS rating dialog from your web app.
+- [In-App Purchases API](ios/in-app-purchases.md): Sell digital goods and subscriptions in your iOS WebView app with StoreKit-powered In-App Purchases.
+- [IAP History API](ios/iap-history.md): Read the user's previous in-app purchases from your web app as JSON — perfect for "My purchases" pages.
+- [QR Code Scanner API](ios/qr-code-scanner.md): Open a native QR code scanner from your web app and process scan results via URL or JavaScript.
+- [Barcode Scanner API](ios/barcode-scanner.md): Scan EAN, UPC, and other barcodes natively in your iOS WebView app and hand results to your web app.
+- [Scanning Mode API](ios/scanning-mode.md): Fine-tune the camera scanning behavior of the QR and barcode scanner in WebViewGold for iOS.
+- [Document Scanner](ios/document-scanner.md): Let users scan paper documents with the camera and upload them through your web app's file upload — powered by Apple VisionKit.
+- [Take Screenshot API](ios/take-screenshot.md): Capture a screenshot of the current app screen programmatically and share or save it — via JavaScript.
+- [App Version Check API](ios/app-version-check.md): Detect the installed app version from your web app and prompt users to update when needed.
+- [Dynamic UI API](ios/dynamic-ui.md): Change native UI elements like the status bar or bottom bar colors dynamically from your web app.
+- [Dynamic App Icon API](ios/dynamic-app-icon.md): Switch between alternative app icons at runtime in your iOS WebView app — triggered from your web app.
+- [Contacts API](ios/contacts.md): Access the device address book from your web app: read contacts with user permission in WebViewGold for iOS.
+- [Biometric Auth API](ios/biometric-authentication.md): Protect your iOS app with Face ID or Touch ID and verify users biometrically from your web app.
+- [Haptic Feedback API](ios/haptic-feedback.md): Trigger native haptic feedback (vibrations) from your web app for a truly native app feeling on iOS.
+- [Shortcut API](ios/shortcut.md): Add Home Screen quick action shortcuts to your iOS app that deep link into specific pages.
+- [Clipboard API](ios/clipboard.md): Copy text to the iOS clipboard and read clipboard content from your web app via JavaScript.
+- [Read/Write Value API](ios/read-write-value.md): Persistently store a string value on the device and read it back into your web app's JavaScript.
+- [Open App Settings API](ios/open-app-settings.md): Send users straight to your app's page in the iOS Settings app to manage permissions and notifications.
+- [Share Extension](ios/share-extension.md): Let users share content from other apps directly into your iOS WebView app with a Share Extension.
+- [Widget Extension](ios/widget-extension.md): Add a Home Screen widget to your iOS WebView app that links users straight into your web app.
+- [App Clip Extension](ios/app-clip.md): Offer a lightweight App Clip version of your iOS app that opens instantly without installation.
+- [Native Navigation Footer](ios/navigation-footer.md): Enable a native bottom navigation bar with back, forward, and custom buttons in your iOS app.
+- [Native Sidebar](ios/sidebar.md): Enable a native sliding sidebar menu with custom links and SF Symbols icons — configured via Sidebar.json.
+- [Screen Capture Detection](ios/screen-capture.md): Detect screenshots and screen recordings in your iOS app and react from your web app.
+- [MultiAPICall Feature](ios/multi-api-call.md): Chain multiple WebViewGold API calls in a single request with the MultiAPICall feature for iOS.
+- [NFC Plugin](ios/nfc.md): Read NFC tags natively in your iOS WebView app and pass tag data to your web app.
+- [Siri Plugin](ios/siri.md): Add Siri Shortcuts support to your iOS WebView app and open app content by voice.
+- [HealthKit Plugin](ios/healthkit.md): Connect your web app to Apple HealthKit and read health data with user permission on iOS.
+- [Build & Publish](ios/publish.md): Publish your WebView app to the Apple App Store: full publishing service, manual process, and changing the bundle identifier.
+- [Credits & Licenses](ios/credits.md): License terms for WebViewGold for iOS, when you need an Envato Extended License, and open source credits.
+- [Rate WebViewGold](ios/rate.md): Enjoying WebViewGold? Rate it on CodeCanyon in seconds — it keeps updates coming.
+- [Android & macOS versions](ios/more-platforms.md): Ship your app on more platforms: get WebViewGold for Android and macOS and reuse the same web app.
+- [Support & Contact](ios/support.md): Get help fast: browse the WebViewGold Support Center, contact our team directly, or request professional custom app development made in Germany.
+
+## WebViewGold for Android
+
+- [WebViewGold for Android – overview](android/README.md): Overview, quick start and list of all topics.
+- [Set up your web app](android/setup-website.md): Prepare your website, PWA, or local HTML files for your Android app: use a remote URL, bundle files offline in the app, or combine both with an offline fallback.
+- [Configure WebViewGold](android/setup.md): Download the WebViewGold Android Studio template, insert your URL, and explore every built-in configuration option — no coding skills required.
+- [App Icon](android/app-icon.md): Add your custom app icon to your WebViewGold Android app in Android Studio — step by step.
+- [Splash Screen](android/splash-screen.md): Customize the splash/launch screen of your Android WebView app with your own graphics.
+- [Navigation Drawer & Footer](android/navigation-drawer.md): Ship an app-like navigation experience with the built-in Material navigation drawer and Material 3 bottom navigation bar — no changes to your website required.
+- [URL Handling API](android/url-handling.md): Decide which links open inside your Android app, in Chrome Custom Tabs, or in the external browser.
+- [Custom CSS & JS API](android/custom-css-js.md): Inject custom CSS styles and JavaScript code into any page of your Android WebView app — perfect for app-only tweaks.
+- [Multi API Call](android/multi-api-call.md): Call several WebViewGold data APIs in one single window.location.href assignment — ideal for cross-platform web apps that also target the iOS version.
+- [Geolocation API](android/geolocation.md): Enable HTML5 geolocation in your Android WebView app and request location permissions properly.
+- [Push Notifications API](android/push-notifications.md): Send push notifications to your Android app users with OneSignal, Firebase, or Pushwoosh — setup, deep links, and per-user targeting explained.
+- [AdMob Ads API](android/admob.md): Monetize your Android app with Google AdMob banner and interstitial ads — configuration and JavaScript triggers.
+- [Facebook Ads API](android/facebook-ads.md): Show Facebook Audience Network banner and interstitial ads in your WebViewGold Android app.
+- [File Downloader API](android/file-downloader.md): Let users download images, PDFs, and other files from your web app to their Android device.
+- [Native Video (PiP) API](android/native-video.md): Play videos natively with Picture-in-Picture support in your Android WebView app.
+- [Reset App API](android/reset-app.md): Reset cache, cookies, and local storage of your Android WebView app with a single link or JavaScript call.
+- [Loading Sign API](android/loading-sign.md): Show or hide the native loading indicator on demand and customize the loading experience of your Android app.
+- [Clipboard API](android/clipboard.md): Copy text to the Android clipboard and read clipboard content from your web app via JavaScript.
+- [UUID API](android/uuid.md): Identify app installations with a unique UUID appended to your WebView URL or retrieved via JavaScript.
+- [Flashlight API](android/flashlight.md): Control the device flashlight from your web app with simple JavaScript links in WebViewGold for Android.
+- [App Links / Deep Linking](android/app-links.md): Open links to your domain directly in your Android app with App Links and custom URL scheme deep linking.
+- [ShareIntent API](android/share-intent.md): Receive content shared from other Android apps directly in your WebView app via Share Intents.
+- [App Sharing Dialog API](android/app-sharing-dialog.md): Trigger the native Android share dialog from your web app to let users share your app or any URL.
+- [In-App Rating API](android/in-app-rating.md): Ask your users for a Google Play review: trigger a native "Rate this app" dialog from your web app via rateapp:// or let WebViewGold show it automatically.
+- [In-App Purchases API](android/in-app-purchases.md): Sell digital goods and subscriptions in your Android WebView app with Google Play Billing.
+- [IAP History API](android/iap-history.md): Return the user's Google Play purchase history as window.purchaseHistory so your web app can list subscriptions or unlock premium content client-side.
+- [QR Code Scanner API](android/qr-code-scanner.md): Open a native QR code scanner from your web app and process scan results via URL or JavaScript.
+- [Scanning Mode API](android/scanning-mode.md): Fine-tune the camera scanning behavior of the QR and barcode scanner in WebViewGold for Android.
+- [Barcode Scanner API](android/barcode-scanner.md): Scan EAN, UPC, and other barcodes natively in your Android WebView app and hand results to your web app.
+- [Take Screenshot API](android/take-screenshot.md): Capture a screenshot of the current app screen programmatically and share or save it — via JavaScript.
+- [App Version Check API](android/app-version-check.md): Detect the installed app version from your web app and prompt users to update when needed.
+- [Contacts API](android/contacts.md): Access the device address book from your web app: read contacts with user permission in WebViewGold for Android.
+- [Dynamic UI API](android/dynamic-ui.md): Change native UI elements like the status bar color dynamically from your web app on Android.
+- [Haptic Feedback API](android/haptic-feedback.md): Trigger native vibration haptic feedback from your web app for a native app feeling on Android.
+- [NFC Plugin](android/nfc.md): Read NFC tags natively in your Android WebView app and pass tag data to your web app.
+- [Open App Settings API](android/open-app-settings.md): Send the user straight to the system App-info screen from your web app to manage permissions, notifications, storage, or force-stop your Android app.
+- [Reconnect API](android/reconnect.md): Reload the last online URL from your offline / fallback HTML page — the perfect "Try again" button for your custom offline screen.
+- [Read/Write Value API](android/read-write-value.md): Persist small strings on the device from JavaScript and read them back — for theme, language, session tokens, or onboarding state.
+- [Biometric Auth API](android/biometric-auth.md): Prompt fingerprint or face authentication with the native Android BiometricPrompt directly from your web app.
+- [Document Scanner](android/document-scanner.md): Add a Scan document option to the file upload dialog — the user scans up to 5 pages and your web app receives a PDF like any other upload.
+- [Printer API](android/printer.md): Send a remote image or PDF to the Android system print dialog — Wi-Fi printers, cloud print, or Save-as-PDF, straight from your web app.
+- [Health Connect API](android/health-connect.md): Read and write Android Health Connect records from JavaScript — mirrors the WebViewGold HealthKit API on iOS so one web app covers both platforms.
+- [Firebase Crashlytics](android/crashlytics.md): Ship crash reports and non-fatal events to your Firebase project, with runtime opt-in / opt-out from your web app.
+- [Build & Publish](android/publish.md): Publish your WebView app to the Google Play Store: full publishing service, manual process, and changing the package name.
+- [Credits & Licenses](android/credits.md): License terms for WebViewGold for Android, when you need an Envato Extended License, and open source credits.
+- [Rate WebViewGold](android/rate.md): Enjoying WebViewGold? Rate it on CodeCanyon in seconds — it keeps updates coming.
+- [iOS & macOS versions](android/more-platforms.md): Ship your app on more platforms: get WebViewGold for iOS and macOS and reuse the same web app.
+- [Support & Contact](android/support.md): Get help fast: browse the WebViewGold Support Center, contact our team directly, or request professional custom app development made in Germany.
+
+## WebViewGold for macOS
+
+- [WebViewGold for macOS – overview](macos/README.md): Overview, quick start and list of all topics.
+- [Setting up your web app](macos/setup-website.md): Prepare your website, PWA or web app for WebViewGold for macOS: supported stacks (HTML, PHP, WordPress, PWA, Lovable, Base44, Bolt …) and tips for a native desktop experience.
+- [Setting up WebViewGold](macos/setup.md): Install Xcode, open the WebViewGold for macOS project, enter your URL in index.html and configure config.json — or bundle your own local HTML content.
+- [App Icon](macos/app-icon.md): Replace the app icon of your WebViewGold for macOS desktop app with your own resized image files.
+- [App Name](macos/app-name.md): Change the application name of your WebViewGold for macOS desktop app in Xcode.
+- [Offline Screen Text](macos/offline-screen.md): Customize the offline screen text of your Mac WebView app by editing OfflineOverlay.xib in Interface Builder.
+- [First Run Dialog](macos/first-run-dialog.md): Edit the First Run Dialog text of your Mac WebView app in FirstRunWindow.xib (Interface Builder).
+- [Splash Screen](macos/splash-screen.md): Change the splash screen text in SplashScreen.xib and the maximum splash duration in Preferences.m of WebViewGold for macOS.
+- [In-App Purchases API](macos/in-app-purchases.md): Sell Mac App Store in-app purchases and subscriptions from your web app: add your product ID in Constants.h and trigger purchases with inapppurchase:// links.
+- [UUID API](macos/uuid.md): Pass a non-personal, unique device ID (UUID) to JavaScript in your Mac WebView app via get-uuid:// to identify devices and restore settings.
+- [Deeplinking API](macos/deep-linking.md): Launch your WebViewGold for macOS app via a custom URL scheme and open a specific page — deeplinking setup explained step by step.
+- [Credits & Licenses](macos/credits.md): License information, trademarks and open source credits (MacGap, MIT license) for WebViewGold for macOS.
+- [Rate WebViewGold](macos/rate.md): Enjoying WebViewGold for macOS? Rate it on CodeCanyon in 10 seconds — it keeps updates coming.
+- [Continue with iOS & Android](macos/more-platforms.md): Reuse your web app on mobile: get WebViewGold for iOS & Android — plus photos2webgallery for macOS.
+- [Contact us](macos/support.md): Get help with WebViewGold for macOS: browse the Support Center for quick answers or contact the team directly.
+
+## Optional
+
+- [All English pages in one file](llms-full.txt): Full text of every English documentation page.
+- [Deutsch](de/README.md): Offizielle WebViewGold-Dokumentation in Markdown: Verwandle jede Website, PWA oder Web-App in eine native iOS-, Android- oder macOS-App – mit Einrichtungsanleitungen, nativen JavaScript-APIs und App-Store-Veröffentlichung.
+- [Français](fr/README.md): Documentation officielle de WebViewGold en Markdown : transformez n’importe quel site web, PWA ou app web en app native iOS, Android ou macOS — guides de configuration, API JavaScript natives et publication sur les stores.
+- [Español](es/README.md): Documentación oficial de WebViewGold en Markdown: convierta cualquier sitio web, PWA o app web en una app nativa para iOS, Android o macOS — guías de configuración, API JavaScript nativas y publicación en las tiendas.
+- [中文](zh/README.md): WebViewGold 官方 Markdown 文档：将任何网站、PWA 或 Web 应用转换为原生 iOS、Android 或 macOS 应用——包含设置指南、原生 JavaScript API 以及应用商店发布说明。
